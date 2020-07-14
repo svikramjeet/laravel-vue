@@ -8,7 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <script src="{{asset('js/app.js?v='.rand())}}" defer></script>
         <!-- Styles -->
         <style>
             html, body {
@@ -64,7 +64,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div id="app" class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -83,7 +83,8 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                {{-- Example Vue Component --}}
+                <example-component></example-component>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
