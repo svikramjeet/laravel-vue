@@ -1948,21 +1948,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      links: {
-        Docs: "https://laracasts.com/docs",
-        News: "https://laravel-news.com",
-        Laracasts: "https://laracasts.com",
-        Nova: "https://nova.laravel.com",
-        Forge: "https://forge.laravel.com",
-        Vapor: "https://vapor.laravel.com",
-        GitHub: "https://github.com/laravel/laravel"
-      }
-    };
-  },
+  props: ['links'],
   mounted: function mounted() {
-    console.log('Component HomeUrl mounted.');
+    console.log('Component HomeUrl mounted with props');
   }
 });
 
@@ -49821,7 +49809,18 @@ Vue.component('homepage-links', __webpack_require__(/*! ./components/HomeUrlComp
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    links: {
+      Docs: "https://laracasts.com/docs",
+      News: "https://laravel-news.com",
+      Laracasts: "https://laracasts.com",
+      Nova: "https://nova.laravel.com",
+      Forge: "https://forge.laravel.com",
+      Vapor: "https://vapor.laravel.com",
+      GitHub: "https://github.com/laravel/laravel"
+    }
+  }
 });
 
 /***/ }),

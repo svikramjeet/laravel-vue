@@ -6,21 +6,9 @@
 
 <script>
     export default {
-    data() {
-        return {
-            links: { 
-                Docs: "https://laracasts.com/docs",
-                News: "https://laravel-news.com",
-                Laracasts: "https://laracasts.com",
-                Nova: "https://nova.laravel.com",
-                Forge: "https://forge.laravel.com",
-                Vapor: "https://vapor.laravel.com",
-                GitHub: "https://github.com/laravel/laravel"
-                },
+        props: ['links'],
+        mounted() {
+            console.log('Component HomeUrl mounted with props')
         }
-    },
-    mounted() {
-        console.log('Component HomeUrl mounted.')
-    }
     }
 </script>

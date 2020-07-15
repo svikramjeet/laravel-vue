@@ -85,7 +85,7 @@
                 </div>
                 
                 {{-- HomeUrl Vue Component --}}
-                <homepage-links></homepage-links>
+                <homepage-links v-bind:links="links"></homepage-links>
                 
             </div>
         </div>

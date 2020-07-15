@@ -30,4 +30,15 @@ Vue.component('homepage-links', require('./components/HomeUrlComponent.vue').def
 
 const app = new Vue({
     el: '#app',
+    data: {
+        links: { 
+            Docs: "https://laracasts.com/docs",
+            News: "https://laravel-news.com",
+            Laracasts: "https://laracasts.com",
+            Nova: "https://nova.laravel.com",
+            Forge: "https://forge.laravel.com",
+            Vapor: "https://vapor.laravel.com",
+            GitHub: "https://github.com/laravel/laravel"
+            }
+    }
 });
