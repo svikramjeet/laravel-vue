@@ -1,20 +1,26 @@
 <template>
-    <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+    <div class="links" v-if="links">
+        <a v-for="(item, index) in links" :href="item">{{index}}</a>
     </div>
 </template>
 
 <script>
     export default {
-        mounted() {
-            console.log('Component mounted.')
+    data() {
+        return {
+            links: { 
+                Docs: "https://laracasts.com/docs",
+                News: "https://laravel-news.com",
+                Laracasts: "https://laracasts.com",
+                Nova: "https://nova.laravel.com",
+                Forge: "https://forge.laravel.com",
+                Vapor: "https://vapor.laravel.com",
+                GitHub: "https://github.com/laravel/laravel"
+                },
         }
+    },
+    mounted() {
+        console.log('Component HomeUrl mounted.')
+    }
     }
 </script>

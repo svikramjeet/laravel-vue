@@ -1947,16 +1947,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      links: {
+        Docs: "https://laracasts.com/docs",
+        News: "https://laravel-news.com",
+        Laracasts: "https://laracasts.com",
+        Nova: "https://nova.laravel.com",
+        Forge: "https://forge.laravel.com",
+        Vapor: "https://vapor.laravel.com",
+        GitHub: "https://github.com/laravel/laravel"
+      }
+    };
+  },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log('Component HomeUrl mounted.');
   }
 });
 
@@ -37601,48 +37607,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _vm.links
+    ? _c(
+        "div",
+        { staticClass: "links" },
+        _vm._l(_vm.links, function(item, index) {
+          return _c("a", { attrs: { href: item } }, [_vm._v(_vm._s(index))])
+        }),
+        0
+      )
+    : _vm._e()
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "links" }, [
-      _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
-        _vm._v("Docs")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://laracasts.com" } }, [
-        _vm._v("Laracasts")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://laravel-news.com" } }, [
-        _vm._v("News")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://blog.laravel.com" } }, [
-        _vm._v("Blog")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://nova.laravel.com" } }, [
-        _vm._v("Nova")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://forge.laravel.com" } }, [
-        _vm._v("Forge")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://vapor.laravel.com" } }, [
-        _vm._v("Vapor")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "https://github.com/laravel/laravel" } }, [
-        _vm._v("GitHub")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -49968,14 +49944,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!******************************************************!*\
   !*** ./resources/js/components/HomeUrlComponent.vue ***!
   \******************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomeUrlComponent_vue_vue_type_template_id_563f0a90___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomeUrlComponent.vue?vue&type=template&id=563f0a90& */ "./resources/js/components/HomeUrlComponent.vue?vue&type=template&id=563f0a90&");
 /* harmony import */ var _HomeUrlComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeUrlComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/HomeUrlComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _HomeUrlComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _HomeUrlComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -50005,7 +49982,7 @@ component.options.__file = "resources/js/components/HomeUrlComponent.vue"
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/HomeUrlComponent.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
-/*! exports provided: default */
+/*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
